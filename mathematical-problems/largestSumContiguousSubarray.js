@@ -12,7 +12,7 @@
 // satrt : 2 , end : 2
 
 
-const arr = [9, 6, -1, -1, -1, 5, -3];
+const arr = [-9, 6, -1, 1, 1, -5, 3];
 const len = arr.length;
 // Sum : 17
 // satrt : 0 , end : 5
@@ -36,9 +36,7 @@ function findHighestSum() {
         } 
         if(currMax < 0){
             currMax = 0;
-            if(maxSoFar == 0){
-                start = i + 1;
-            }
+            start = i + 1;
         }
 
         // If array contains a positive number,
