@@ -1,4 +1,3 @@
-
 // Array of negative numbers
 // const arr = [-9, -6, 1, 1, 1, -5, -3];
 // const len = arr.length;
