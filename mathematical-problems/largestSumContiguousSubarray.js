@@ -42,7 +42,7 @@ function findHighestSum() {
         }
 
         // If array contains a positive number,
-        // them mark allNegative false.
+        // then mark allNegative false.
         if(arr[i] > 0){
             allNegative = false; 
         }
