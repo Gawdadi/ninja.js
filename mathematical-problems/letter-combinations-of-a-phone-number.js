@@ -16,6 +16,7 @@ function maxComb(){
     const recursive = (pos,str) => {
             if(pos == len) ans.push(str);
             else {
+                // Give 2 => [a,b,c].
                 let letters = digitsMap.get(arr[pos]);
                 for(let i = 0; i < letters.length; i++)
                     recursive(pos + 1 , str + letters[i]);
@@ -25,12 +26,15 @@ function maxComb(){
     return ans;
 }
 
+// Map phone number digits to alphabets like
+// 2 => [a,b,c]
 function mapDigits(){
     const digitsMap = new Map();
     var j = 97
     var k = 97
     for(i = 2; i < 10; i++) {
         if(i == 7 || i == 9) {
+            // Phone has 4 alphabets in 7 and 9 digit.
                 while(j < k + 4) {
                     if(!digitsMap.get(i)) digitsMap.set(i,[]);
                         digitsMap.get(i).push(String.fromCharCode(j));
@@ -48,6 +52,7 @@ function mapDigits(){
     return digitsMap;
 }
 
+// Converting a number into array.
 function getDigits(num){
     var arr = [];
     while(Math.floor(num) > 0){
