@@ -27,7 +27,7 @@ function maxComb(){
 }
 
 // Map phone number digits to alphabets like
-// 2 => [a,b,c]
+// 2 => [a,b,c], 3 => [d,e,f]
 function mapDigits(){
     const digitsMap = new Map();
     var j = 97
