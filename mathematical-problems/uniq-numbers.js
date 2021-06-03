@@ -8,9 +8,9 @@ var uniq = function() {
     var i = 0;
     while(i < nums.length){
         const index = nums.indexOf(nums[i]);
-        if(index > -1 && index !== i){
-            nums.splice(index,1);
-        } else {
+        
+        if(index > -1 && index !== i)  nums.splice(index,1);
+            else {
              i++;
         }
     }
