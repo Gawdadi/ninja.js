@@ -3,10 +3,11 @@
 const string = "abcd!cder"
 //Ouput : 5
 
-const string = "dvdf"
+// const string = "dvdf"
 //Ouput : 3
 
 /**
+ * @param {string} s
  * @return {number}
  */
 
@@ -26,6 +27,22 @@ var lengthOfLongestSubstring = function() {
         }
         max = Math.max(max,strHashMap.size)
     }
+
+    // Complexity O(n^2)
+
+    // let max = 0,i =  0;
+    // let str = "";
+    // while(i < string.length){
+    //     const index = str.indexOf(string.charAt([i]));
+    //     if(index > -1) {
+    //         str = str.slice(index + 1,string.length);
+    //     }
+    //     str += string.charAt(i);
+    //     max = Math.max(str.length,max);
+    //     i++;
+    // }
+    //   return max;
+
       return max;
 };
 
