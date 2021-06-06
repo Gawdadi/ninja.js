@@ -12,7 +12,6 @@ const element = 77;
 
     // If start is greater than end.
     // element not found.
-
     if(start > end) return 'Element not found'
 
     let middle = Math.ceil((start + end)/2)
