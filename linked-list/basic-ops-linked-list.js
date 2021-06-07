@@ -13,7 +13,7 @@ class LinkedList {
         this.head = null;
     }
 
-    // Inserting node at begining.
+    // Insert node at begining.
     add(new_data){
 
         let curr = this.head;
@@ -29,7 +29,7 @@ class LinkedList {
         this.size++;
     }
 
-    // Inserting node at end.
+    // Insert node at end.
     insertAtEnd(data) {
 
         let new_node = new Node(data);
@@ -45,7 +45,7 @@ class LinkedList {
         current.next = new_node;
     }
 
-    // Inserting node at particular index.
+    // Insert node at particular index.
     insertAtIndex(data,index){
         if(index < 0 || this.size <= index) {
             console.log('Invaid input' + index);

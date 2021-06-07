@@ -1,4 +1,5 @@
- class Node {
+// Create a node.
+class Node {
      constructor(_data, _prev = null, _next = null) {
          this.data = _data;
          this.prev = _prev
@@ -6,13 +7,15 @@
      }
  }
 
+// Link list 
  class DoublyLinkedList {
      constructor (){
          this.head = null;
          this.size = 0;
      }
 
-     add(data){
+    // Insert node at begining. 
+    add(data){
          let curr = this.head
          var new_node = new Node(data);
 
@@ -28,6 +31,7 @@
          this.size++;
     }
 
+    // Insert node at a aspecific position.
     insertAt(data, pos) {
 
         if(pos > this.size || pos < 0) {
@@ -51,6 +55,7 @@
 
     }
 
+    // Remove node at a aspecific position.
     removeByIndex(pos) {
 
         if(pos > this.size || pos < 0) {
@@ -75,6 +80,7 @@
         this.size--;
     }
 
+    // Remove a aspecific node.
     removeByVal(val) {
 
         let curr = this.head, prev = null, ahead_node, flag;
@@ -106,15 +112,17 @@
             }
     }
 
-     getSize() {
+    // Get size of a linked list.
+    getSize() {
          console.log(this.size);
      }
 
-     print(){
+    // Print list.
+    print(){
 
         let curr = this.head;
         while(curr){
-            console.log(curr.data);
+            console.log(curr);
             curr = curr.next;
         }
      }
@@ -122,15 +130,18 @@
 
  var _dll = new DoublyLinkedList();
 
- _dll.add(60);
- _dll.add(70);
- _dll.add(80);
- _dll.add(60);
- _dll.add(100);
- _dll.add(60);
+_dll.add(60);
+_dll.add(70);
+_dll.add(80);
+_dll.add(60);
+_dll.add(100);
+_dll.add(60);
+
 //  _dll.print();
- _dll.insertAt(65,1)
-//  _dll.removeByIndex(3);
-//  _dll.getSize();
+
+_dll.insertAt(65,1)
+_dll.removeByIndex(3);
+
 _dll.removeByVal(50);
- _dll.print();
+_dll.print();
+_dll.getSize();
