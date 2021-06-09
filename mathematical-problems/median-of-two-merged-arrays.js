@@ -1,4 +1,3 @@
-
 const nums1 = [1,2,-3]
 const nums2 = [-3,-2,-1]
 var findMedianSortedArrays = function() {
