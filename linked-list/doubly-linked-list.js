@@ -131,7 +131,7 @@ class Node {
  var _dll = new DoublyLinkedList();
 
 _dll.add(60);
-_dll.add(70);``
+_dll.add(70);
 _dll.add(80);
 _dll.add(60);
 _dll.add(100);
