@@ -13,6 +13,7 @@ class SinglyLinkList{
     }
 }
 
+// Add Nodes.
 SinglyLinkList.prototype.add = function(data) {
     const new_node = new Node(data)
     if(!this.head) this.head = new_node
@@ -24,6 +25,7 @@ SinglyLinkList.prototype.add = function(data) {
         }
 }
 
+// Print nodes.
 SinglyLinkList.prototype.print = function() {
             let curr = this.head, n = 0;
             while(curr) {
@@ -33,12 +35,13 @@ SinglyLinkList.prototype.print = function() {
             }
 }
 
+// Reverse the link list
 SinglyLinkList.prototype.reverse = function() {
     let curr = this.head; temp_node = null;
     if(!curr || !curr.next) {
         this.head = [ ];
     }
-    while(curr){
+    while(curr) {
         const store_node = new Node(curr.data, curr.next);
         curr.next = temp_node;
         temp_node = curr;
@@ -61,5 +64,6 @@ _sll.add(1);
 _sll.print();
 _sll.reverse();
 
-console.log('--------------Reversed Node-------------')
+console.log('--------------Reversed Node-------------');
+
 _sll.print();
