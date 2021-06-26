@@ -2,12 +2,12 @@ const str1 = "ilovegoogle";
 const str2 = "ve";
 // Output : 3;
 
-const str1 = "";
-const str2 = "";
+// const str1 = "";
+// const str2 = "";
 // Output : 0;
 
-const str1 = "ilove";
-const str2 = "hate";
+// const str1 = "ilove";
+// const str2 = "hate";
 // Output : -1;
 
 // Don't use indexOf();
