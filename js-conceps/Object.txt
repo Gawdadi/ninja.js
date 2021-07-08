@@ -36,7 +36,7 @@
     const obj = new user('John', 20);
 
 
-    *** Check for new operator, if not found than add new.
+    **** Check for new operator, if not found than add new.
 
    function User(name) {
 
@@ -50,7 +50,7 @@
             let john = User("John"); // redirects call to new User
             alert(john.name); // John
     
-    **** We can omit '()' if there is no arugment.
+    ***** We can omit '()' if there is no arugment.
 
     let user = new User; same as new User();
 
@@ -126,8 +126,8 @@ Object destructuring
     {{age}} // 65
     {{gender}} // male
 
-**** Order doesn't matter while destrucuting an object unlike in arrays. 
-       A Left side variable will get value from the same key name. ****
+***** Order doesn't matter while destrucuting an object unlike in arrays. 
+       A Left side variable will get value from the same key name. *****
     
     const obj = {
         name: john,
@@ -142,21 +142,21 @@ Object destructuring
     {{gender}} // male
 
 
-*** The rest pattern (...rest)
+**** The rest pattern (...rest)
 
     let {age , ...rest} = obj;
 
     alert(age); // 65
     alert(rest); // { name : john, gender : male};
 
-*** Using default values
+**** Using default values ****
 
     let {age = 20 , gender = 'Male'} = {age:18};
 
     alert(age); // 18
     alert(gender); // Male (Default);
 
-*** Using different variables
+**** Using different variables
 
     let {age:a, gender:gen = 'Male'} = {age:18}; // let {prop : varName = default, ...rest} = object
 
