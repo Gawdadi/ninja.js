@@ -86,3 +86,41 @@ completeBtRootB.children.push(completeBtRootD);
 completeBtRootC.children.push(completeBtRootE);
 
 console.log(completeBtRootNode);
+
+// **** Perfect binary Tree **** //
+
+`
+                         (A)
+                        /   \
+                       /     \
+                     (B)     (C) 
+                    /   \    /  \
+                   /     \  /    \
+                  (D)   (E)(f)   (G)     
+                        
+                  PERFECT BINARY TREE
+                      `;
+
+/**
+ * When all the levels (including the last one) are full of nodes.
+ */
+
+// create nodes
+const perfectBtRootNode = new TreeNode("A");
+const perfectBtRootB = new TreeNode("B");
+const perfectBtRootC = new TreeNode("C");
+const perfectBtRootD = new TreeNode("D");
+const perfectBtRootE = new TreeNode("E");
+const perfectBtRootF = new TreeNode("F");
+const perfectBtRootG = new TreeNode("G");
+
+// Associate children
+perfectBtRootNode.children.push(perfectBtRootB);
+perfectBtRootNode.children.push(perfectBtRootC);
+
+perfectBtRootB.children.push(perfectBtRootD);
+perfectBtRootB.children.push(perfectBtRootE);
+
+perfectBtRootC.children.push(perfectBtRootE);
+perfectBtRootC.children.push(perfectBtRootG);
+console.log(perfectBtRootNode);
