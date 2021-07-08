@@ -1,0 +1,49 @@
+function test(parameter1, parameter2, ....) {
+    ....//
+}
+
+test(argument1, argument2, ....);
+
+
+**** Function Declaration aka Function Statement ****
+
+function a() {
+    .....//
+}
+
+**** Function Expression ****
+
+var a = function () {
+    ..//
+}
+
+**** Anonymous Function ****
+
+Function with no name is called Anonymous function.
+
+function () {
+    ...// Can't be used alone. Will give error.
+}
+
+**** First Class Functions **** 
+
+var a = function(fn) {
+    return function() {
+        ...//
+    }
+}
+
+a(function () {
+    ..//
+});
+
+A programming language is said to have First-class functions
+when functions in that language are treated like any other variable.
+For example, in such a language, a function can be passed as an argument to other functions,
+can be returned by another function and can be assigned as a value to a variable.
+
+**** Arrow Function **** 
+
+a() =>{
+    .../
+}
