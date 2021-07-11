@@ -19,7 +19,7 @@ var a = function () {
 
 **** Anonymous Function ****
 
-Function with no name is called Anonymous function.
+Function with no name is called Anonymous function. Use it with Function Expression.
 
 function () {
     ...// Can't be used alone. Will give error.
